@@ -1,0 +1,26 @@
+
+.slider img{
+    margin: 0 40px;    
+}
+
+.container{
+    overflow: hidden;
+    padding: 50px 0;
+    white-space: nowrap;
+
+}
+
+@keyframes slide {
+    0%{transform: translateX(0%);}
+    50%{transform: translateX(-50%);}
+    60%{transform: translateX(-50%);}
+    100%{transform: translateX(-100%);}
+}
+
+.slider {
+    white-space: nowrap;
+    animation: slide 20s infinite linear;
+    transition-delay: 2s;
+    margin: 0;
+    display: inline-block;
+}
